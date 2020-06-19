@@ -27,7 +27,7 @@ export const Container = styled.div`
 
     &:hover {
         background-color: var(--quinary);
-        > div svg {
+        div:nth-child(2) > svg {
             display: inline-block;
         }
     }
@@ -38,7 +38,7 @@ export const Container = styled.div`
         }
     }
 
-    > div svg {
+    > div:nth-child(2) > svg {
         display: none;
     }
 `;
