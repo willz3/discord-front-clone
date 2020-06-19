@@ -14,7 +14,7 @@ Discord layout created using ReactJS.
 - [x] Hide icons and just show when the mouse is hovering.
 
 ## Improves
-- Only the channel title can be selected (or have blank text) when the mouse is hovering or the channel is selected
+- Only the channel title can be selected (or have a white text) when the mouse is hovering or the channel is selected
 
 ## Available Scripts
 
