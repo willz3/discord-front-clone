@@ -1,4 +1,4 @@
-# Discord UI Clone | Rocketseat
+# Discord UI Clone | Rocketseat | On going
 
 Discord layout created using ReactJS.
 
