@@ -1,4 +1,4 @@
-# Discord UI Clone | Rocketseat | On going
+# Discord UI Clone | Rocketseat
 
 Discord layout created using ReactJS.
 
@@ -17,6 +17,7 @@ Discord layout created using ReactJS.
 - Only the channel title can be selected (or have a white text) when the mouse is hovering or the channel is selected.
 - Removed bold effect just in nicknames of user list of server.
 - Fixed bug in avatar icon of message on zoom.
+- Added verify tag in flag of bot.
 
 ## Available Scripts
 
