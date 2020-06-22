@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Check } from 'styled-icons/material';
 
 export const Container = styled.div`
     display: flex;
@@ -51,17 +52,24 @@ export const Header = styled.div`
         font-size: 16px;
     }
 
-    > span {
-        margin-left: 6px;
+    > div {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 9px;
+
         background-color: var(--discord);
         color: var(--white);
         border-radius: 4px;
-        padding: 4px 5px;
+        padding: 3px 3px;
 
         text-transform: uppercase;
-        font-weight: bold;
-        front-size: 11px;
-    }
+        font-size: 10px;
+
+        > span {
+            margin-left: 1px;
+        }
+    } 
 
     > time {
         margin-left: 6px;
@@ -84,4 +92,11 @@ export const Mention = styled.span`
     &:hover {
         text-decoration: underline;
     }
+`;
+
+export const VerifyBot = styled(Check)`
+    width: 13px;
+    height: 13px;
+    color: var(--white);
+
 `;

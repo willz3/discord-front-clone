@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Avatar, Message, Header, Content } from './styles';
+import { Container, Avatar, Message, Header, Content, VerifyBot } from './styles';
 export { Mention } from './styles';
 
 export interface Props {
@@ -24,7 +24,7 @@ const ChannelMessage: React.FC<Props> = ({
             <Message>
                 <Header>
                     <strong>{author}</strong>
-                    { isBot && <span>bot</span> }
+                    { isBot && <div><VerifyBot /><span>bot</span></div> }
                     <time>{ date }</time>
                 </Header>  
                 <Content>

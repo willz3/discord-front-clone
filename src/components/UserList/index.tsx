@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Role, User, Avatar } from './styles';
+import { Container, Role, User, Avatar, VerifyBot } from './styles';
 
 interface UserProps {
     nickname: string;
@@ -11,10 +11,8 @@ const UserRow: React.FC<UserProps> = ({ nickname, isBot }) => {
     return (
         <User>
             <Avatar className={isBot ? 'bot' : ''} />
-
             <span>{ nickname }</span>
-
-            { isBot && <span>bot</span> }
+            { isBot && <div><VerifyBot /><span>bot</span></div> }
         </User>
     );
 }

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Check } from 'styled-icons/material';
 
 export const Container = styled.div`
     grid-area: UL;
@@ -59,19 +60,24 @@ export const User = styled.div`
         overflow: hidden;
     }
 
-    > span:nth-of-type(2) {
+    > div:nth-of-type(2) {
+        display:flex;
+        align-items: center;
+        justify-content: center;
         margin-left: 9px;
 
         background-color: var(--discord);
         color: var(--white);
         border-radius: 4px;
-        padding: 4px 5px;
+        padding: 3px 3px;
 
         text-transform: uppercase;
-        font-weight: bold;
-        font-size: 13px;
-    }
-    
+        font-size: 10px;
+
+        > span {
+            margin-left: 1px;
+        }
+    }    
 `;
 
 export const Avatar = styled.div`
@@ -85,4 +91,11 @@ export const Avatar = styled.div`
     &.bot {
         background-color: var(--mention-detail);
     }
+`;
+
+export const VerifyBot = styled(Check)`
+    width: 13px;
+    height: 13px;
+    color: var(--white);
+
 `;
